@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">application</string>
+
+    <string name="intro">first activity</string>
+
+    <string-array name="colors">
+        <item>Purple</item>
+        <item>Yellow</item>
+        <item>Fuchsia</item>
+    </string-array>
+</resources>

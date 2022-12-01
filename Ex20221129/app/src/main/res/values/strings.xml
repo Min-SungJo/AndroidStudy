@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ex20221129</string>
+    <string-array name="content">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+    </string-array>
+</resources>

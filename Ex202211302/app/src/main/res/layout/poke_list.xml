@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imgPoke"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00000000"
+        android:padding="0sp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPokeLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="Lv : 1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgPoke"
+        app:layout_constraintTop_toTopOf="@+id/imgPoke" />
+
+    <TextView
+        android:id="@+id/tvPokeName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="피카츄"
+        android:textSize="24sp"
+
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="24sp"
+        android:autoSizeStepGranularity="2sp"
+
+        app:layout_constraintStart_toStartOf="@+id/tvPokeLevel"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokeLevel" />
+
+    <TextView
+        android:id="@+id/tvPokeType"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="전기"
+        android:textSize="18sp"
+
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="18sp"
+        android:autoSizeStepGranularity="2sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imgPoke"
+        app:layout_constraintStart_toStartOf="@+id/tvPokeName"
+        app:layout_constraintTop_toBottomOf="@+id/tvPokeName"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
