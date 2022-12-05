@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/tap1"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="Home" />
+    <item
+        android:id="@+id/tap2"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Board" />
+    <item
+        android:id="@+id/tap3"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Wrtie" />
+    <item
+        android:id="@+id/tap4"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Settings" />
 </menu>

@@ -37,12 +37,6 @@
         android:gravity="center_vertical"
         android:text="피카츄"
         android:textSize="24sp"
-
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeMaxTextSize="24sp"
-        android:autoSizeStepGranularity="2sp"
-
         app:layout_constraintStart_toStartOf="@+id/tvPokeLevel"
         app:layout_constraintTop_toBottomOf="@+id/tvPokeLevel" />
 
@@ -53,12 +47,6 @@
         android:gravity="center_vertical"
         android:text="전기"
         android:textSize="18sp"
-
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="12sp"
-        android:autoSizeMaxTextSize="18sp"
-        android:autoSizeStepGranularity="2sp"
-
         app:layout_constraintBottom_toBottomOf="@+id/imgPoke"
         app:layout_constraintStart_toStartOf="@+id/tvPokeName"
         app:layout_constraintTop_toBottomOf="@+id/tvPokeName"

@@ -17,15 +17,18 @@ class MainActivity : AppCompatActivity() {
         val btnLog = findViewById<Button>(R.id.btnLog)
         val bnv = findViewById<BottomNavigationView>(R.id.bnv)
         val fl = findViewById<FrameLayout>(R.id.fl)
-
+        supportFragmentManager.beginTransaction().replace(
+            R.id.fl,
+            Fragment1()
+        ).commit()
         // Fragment 구현
         // bnv 에서 선택한 메뉴에 따라 fl 에 표시할 Fragment 를 갈아 끼운다
         bnv.setOnItemSelectedListener {
             // item -> 내가 선택한 메뉴의 정보
             Log.d("id", it.itemId.toString())
-            when(it.itemId){
-                R.id.tap1 ->{
-                    Toast.makeText(applicationContext,"첫번째 탭",Toast.LENGTH_SHORT).show()
+            when (it.itemId) {
+                R.id.tap1 -> {
+                    Toast.makeText(applicationContext, "첫번째 탭", Toast.LENGTH_SHORT).show()
                     supportFragmentManager.beginTransaction().replace(
                         //beginTrasaction() : 프래그먼트의 추가/변경/삭제
                         //1) fragment가 들어갈 위치
@@ -34,22 +37,22 @@ class MainActivity : AppCompatActivity() {
                         Fragment1()
                     ).commit()
                 }
-                R.id.tap2 ->{
-                    Toast.makeText(applicationContext,"두번째 탭",Toast.LENGTH_SHORT).show()
+                R.id.tap2 -> {
+                    Toast.makeText(applicationContext, "두번째 탭", Toast.LENGTH_SHORT).show()
                     supportFragmentManager.beginTransaction().replace(
                         R.id.fl,
                         Fragment2()
                     ).commit()
                 }
-                R.id.tap3 ->{
-                    Toast.makeText(applicationContext,"세번째 탭",Toast.LENGTH_SHORT).show()
+                R.id.tap3 -> {
+                    Toast.makeText(applicationContext, "세번째 탭", Toast.LENGTH_SHORT).show()
                     supportFragmentManager.beginTransaction().replace(
                         R.id.fl,
                         Fragment3()
                     ).commit()
                 }
-                R.id.tap4 ->{
-                    Toast.makeText(applicationContext,"네번째 탭",Toast.LENGTH_SHORT).show()
+                R.id.tap4 -> {
+                    Toast.makeText(applicationContext, "네번째 탭", Toast.LENGTH_SHORT).show()
                     supportFragmentManager.beginTransaction().replace(
                         R.id.fl,
                         Fragment4()

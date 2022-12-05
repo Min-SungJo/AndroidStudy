@@ -11,19 +11,19 @@
         android:id="@+id/btnRed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
         android:text="빨강"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPink"
+        app:layout_constraintEnd_toStartOf="@+id/btnPink"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/btnPink" />
 
     <Button
         android:id="@+id/btnBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:text="검정"
         app:layout_constraintBottom_toBottomOf="@+id/btnPink"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnPink"
         app:layout_constraintTop_toTopOf="@+id/btnPink" />
 
@@ -31,9 +31,21 @@
         android:id="@+id/btnPink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:text="핫핑크"
-        app:layout_constraintBottom_toBottomOf="@+id/btnRed"
-        app:layout_constraintStart_toEndOf="@+id/btnRed"
-        app:layout_constraintTop_toTopOf="@+id/btnRed" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="다른 색상"
+        app:layout_constraintEnd_toEndOf="@+id/btnPink"
+        app:layout_constraintStart_toStartOf="@+id/btnPink"
+        app:layout_constraintTop_toBottomOf="@+id/btnPink" />
 </androidx.constraintlayout.widget.ConstraintLayout>

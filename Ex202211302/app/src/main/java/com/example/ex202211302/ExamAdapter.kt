@@ -33,6 +33,7 @@ class ExamAdapter(val context: Context, val pokeList : ArrayList<PokeVO>)
         return ViewHolder(view)
     }
 
+    // holder (ViewHolder 가 가지고 있는 필드 id 값을 다 사용할 수 있는 매개변수)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.imgPoke.setImageResource(pokeList.get(position).img)
         holder.tvPokeLevel.setText(pokeList.get(position).level)
