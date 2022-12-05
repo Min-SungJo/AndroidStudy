@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896621383866",
+    "project_id": "full-stack-6c7bf",
+    "storage_bucket": "full-stack-6c7bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896621383866:android:b39125712173bca9f7f283",
+        "android_client_info": {
+          "package_name": "com.example.fullstackapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896621383866-j2ki6et3gdcscoui649j15uftfi5kavr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCXSj59t_eS8_Fp8M8p3vneyir6Qz8NOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896621383866-j2ki6et3gdcscoui649j15uftfi5kavr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
