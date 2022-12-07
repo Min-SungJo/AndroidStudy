@@ -47,7 +47,7 @@ class Fragment1 : Fragment() {
         // 3. WebView 에 Client 설정
         wv.webViewClient = WebViewClient()
         // 4. WebView 에 주소 적용
-        // default Valur 가 있음
+        // default Value 가 있음
         wv.loadUrl(url!!)
         return view
     }

@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // auth 에 담겨있느 ㄴ기능
+        // auth 에 담겨있는 기능
         // createUsersWithEmailAndPassword : 회원가입(email, pw)
         // SignInWithEmailAndPassword : 로그인(email, pw)
         // SignInAnonymous : 익명로그인()
