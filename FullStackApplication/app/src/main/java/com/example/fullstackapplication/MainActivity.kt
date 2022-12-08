@@ -32,8 +32,12 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().replace(
             R.id.fl,
-            Fragment1Home()
+            ContactFragment()
         ).commit()
+//        supportFragmentManager.beginTransaction().replace(
+//            R.id.fl,
+//            Fragment1Home()
+//        ).commit()
 
         imgLogout.setOnClickListener{
             auth.signOut()
@@ -82,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.tap5 ->{
                     supportFragmentManager.beginTransaction().replace(
                         R.id.fl,
-                        Fragment5Store()
+                        ChatFragment()
                     ).commit()
                 }
             }

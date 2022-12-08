@@ -6,4 +6,6 @@ data class ListVO(
     val title: String,
     val url: String
 ) {
+
+    constructor() : this("","","")
 }

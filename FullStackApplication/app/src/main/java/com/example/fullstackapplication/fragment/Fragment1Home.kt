@@ -45,7 +45,7 @@ class Fragment1Home : Fragment() {
         val btnContact = view.findViewById<Button>(R.id.btnContact)
 
 
-        val yehoUrl = "https://android-project-yeho-default-rtdb.firebaseio.com/"
+        val yehoUrl = "https://iotchat-188fe-default-rtdb.firebaseio.com/"
 
         val yehoDb = Firebase.database(yehoUrl)
         val msj = yehoDb.getReference("민성조")

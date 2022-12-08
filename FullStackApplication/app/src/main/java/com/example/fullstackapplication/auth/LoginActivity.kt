@@ -28,6 +28,8 @@ class LoginActivity : AppCompatActivity() {
         val loginId = sharedPreferences.getString("loginId", "")
         val loginPw = sharedPreferences.getString("loginPw", "")
 
+        val sp = getSharedPreferences("loginInfo",Context.MODE_PRIVATE)
+        val loginName = sp.getString("loginId","null")
         // FireabseAuth 초기화
         auth = Firebase.auth
         val etLoginEmail = findViewById<EditText>(R.id.etLoginEmail)
@@ -53,6 +55,10 @@ class LoginActivity : AppCompatActivity() {
                         editor.putString("loginId", email)
                         editor.putString("loginPw", pw)
                         editor.commit()
+
+                        val editorSp = sp.edit()
+                        editorSp.putString("loginId",email)
+                        editorSp.commit()
 
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
