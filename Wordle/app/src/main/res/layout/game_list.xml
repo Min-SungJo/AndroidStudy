@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CDCDCD">
+
+    <EditText
+        android:id="@+id/etGame1"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_radius_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="a"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/etGame2"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_radius_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="b"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/etGame3"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_radius_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="c"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/etGame4"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_radius_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="d"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/etGame5"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_radius_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="e"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+</LinearLayout>

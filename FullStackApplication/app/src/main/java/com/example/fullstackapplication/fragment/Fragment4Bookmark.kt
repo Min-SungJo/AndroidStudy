@@ -47,7 +47,9 @@ class Fragment4Bookmark : Fragment() {
         // 1. 전체 컨텐츠 데이터들을 다 가져오자
 //        getContentData()
         // 2. 사용자가 북마크한 정보를 다 가져오자
-        getBookmarkData()
+        getBookmarkData() // bookList 를 모두 가져온 뒤쪽에 getContent 가 실행되고 있음
+        // getContentData()가 하고 있는 일은 전체 데이터를 가져오는 것이 아니라
+        // bookmarkList 에 있는 것만 가져오는 역할
         // 3. 전체 컨텐츠 중에서 사용자가 북마크한 정보만 recyclerView 에 반영
         adapter = BookmarkAdapter(requireActivity(), data, keyData, bookmarkList)
         // 4. adapter 적용
@@ -56,6 +58,8 @@ class Fragment4Bookmark : Fragment() {
         return view
     }
 
+    // 전체보기에 있는 게시물 중, 북마크가 찍힌 것(VO)을 가져와야 한다
+    // -> 전부 가져오는 것이 아니라 북마크가 찍혀있는 것만 if 로 가져온다
     fun getContentData() {
         // content 경로에 있는 데이터를 다 가지고 오자
         // uid --> keyData 에 담아준다
@@ -66,6 +70,7 @@ class Fragment4Bookmark : Fragment() {
 
                 for (model in snapshot.children) {
                     val item = model.getValue(ListVO::class.java) as ListVO
+                    // bookmarkList 에 값이 채워져 있어야 확인 가능
                     if (bookmarkList.contains(model.key.toString())) {
                         data.add(item)
                     }
